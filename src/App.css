@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Rubik";
+  src: url("./fonts/Rubik-Regular.ttf") format(".ttf");
+}
+
 .header {
   background-color: black;
   padding-top: 20px;
@@ -7,6 +12,8 @@
 
 h1 {
   color: white;
+  font-size: 40px;
+  font-family: "Bungee", sans-serif;
 }
 
 .jobs {
@@ -21,19 +28,23 @@ h1 {
 }
 
 .job {
-  width: 250px;
-  height: 250px;
+  width: calc(100% / 3 - 3 * 20px);
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 5px;
-  margin: 10px;
+  padding: 0px 5px;
+  margin: 20px;
   border: 8px solid black;
   box-sizing: border-box;
+  font-family: "Roboto";
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .job > .description {
-  font-size: 24px;
+  font-size: 30px;
+  font-weight: bold;
   color: black;
 }
 
@@ -64,8 +75,49 @@ h1 {
 .footer {
   font-size: 16px;
   text-align: center;
+  padding-top: 30px;
 }
 
 .gras {
   font-weight: bold;
+}
+
+/* Responsive */
+
+@media (min-width: 1136px) and (max-width: 1712px) {
+  .job {
+    width: calc(100% / 2 - 2 * 80px);
+  }
+}
+
+@media (max-width: 1135px) {
+  .job {
+    width: 80%;
+  }
+}
+
+@media (min-height: 945px) and (max-height: 1100px) {
+  .job {
+    height: 230px;
+  }
+}
+
+@media (max-height: 945px) {
+  .header {
+    height: 8vh;
+  }
+
+  .jobs {
+    height: 79vh;
+    overflow-y: scroll;
+  }
+
+  .job {
+    height: 230px;
+    flex-shrink: 0;
+  }
+
+  .footer {
+    height: 11vh;
+  }
 }

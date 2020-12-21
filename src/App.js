@@ -28,7 +28,7 @@ const App = () => {
         <Job
           color="yellow"
           className="job"
-          description="Responsable d'Atelier(H/F)"
+          description="Responsable d'Atelier (H/F)"
           contractType="CDD"
           country="France"
           city="Paris"
