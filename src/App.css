@@ -1,38 +1,71 @@
-.App {
+.header {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.jobs {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 75%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.job {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 10px;
+  border: 8px solid black;
+  box-sizing: border-box;
+}
+
+.job > .description {
+  font-size: 24px;
+  color: black;
+}
+
+.job > .detail {
+  font-size: 16px;
+}
+
+.red {
+  border: red 8px solid;
+}
+
+.yellow {
+  border: yellow 8px solid;
+}
+
+.blue {
+  border: cyan 8px solid;
+}
+
+.green {
+  border: green 8px solid;
+}
+
+.indigo {
+  border: indigo 8px solid;
+}
+
+.footer {
+  font-size: 16px;
+  text-align: center;
+}
+
+.gras {
+  font-weight: bold;
 }
